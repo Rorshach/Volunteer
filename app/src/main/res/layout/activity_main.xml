@@ -11,12 +11,11 @@
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/btn_sign_in"
-        android:layout_width="175dp"
+        android:layout_width="410dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_above="@+id/logoutBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:id="@+id/Logo"
@@ -47,19 +46,20 @@
         android:layout_height="wrap_content"
         android:text="Logout"
         android:id="@+id/logoutBtn"
+        android:width="410dp"
+        android:onClick="logoutBtn"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:width="400dp"
-        android:onClick="logoutBtn" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <fragment
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:name="ozymandias.volunteer.MainFragment"
         android:id="@+id/fragment"
-        android:layout_alignBottom="@+id/btn_sign_in"
-        android:layout_alignRight="@+id/logoutBtn"
-        android:layout_alignEnd="@+id/logoutBtn"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main"
+        android:layout_above="@+id/btn_sign_in"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

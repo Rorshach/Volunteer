@@ -43,6 +43,10 @@ public class MainActivity extends AppCompatActivity implements ConnectionCallbac
 
     private int enterCounter = 0;
 
+    // User info
+    private String fName, lName, dName, email, password, occupation;
+    private int id;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements ConnectionCallbac
     @Override
     protected void onStart() {
         super.onStart();
-        mGoogleApiClient.connect();
+        //mGoogleApiClient.connect();
     }
 
     @Override
